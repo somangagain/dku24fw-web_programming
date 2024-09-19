@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>저의 소개</title>
+    <style>
+      body {
+        margin: 40px;
+
+        background-color: #f5f5f5;
+        color: #595959;
+
+        text-align: center;
+        line-height: 2;
+      }
+
+      h1 {
+        max-width: 240px;
+
+        margin: auto;
+
+        color: black;
+
+        text-align: center;
+      }
+
+      hr {
+        max-width: 128px;
+        height: 8px;
+
+        margin-bottom: 24px;
+
+        border: solid #3d5afe;
+        background-color: #3d5afe;
+      }
+      span {
+        color: #3d5afe;
+
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      div {
+        padding: 24px;
+      }
+      img {
+        width: 320px;
+      }
+    </style>
+    <script>
+      function birdShow() {
+        document.getElementById("bird").src =
+          "https://images.pexels.com/photos/75973/pexels-photo-75973.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
+      }
+      function birdHide() {
+        document.getElementById("bird").src = "";
+      }
+    </script>
+  </head>
+  <body>
+    <h1 onmouseover="birdShow()" onmouseout="birdHide()">김성수</h1>
+    <hr />
+    안녕하세요 :) 저는 단국대학교 학생입니다.<br />
+    어렸을 때부터 <span>소프트웨어</span>에 흥미를 갖고 꾸준히 공부해왔으며<br />
+    이제는 그와 관련한 전문가가 되기 위해 열심히 <span>노력</span>하고
+    있습니다.<br />
+    <div>
+      <img id="bird" />
+    </div>
+  </body>
+</html>
